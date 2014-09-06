@@ -1,0 +1,28 @@
+/consumer/jpeg makefile ok
+/consumer/lame makefile ok
+/consumer/typeset makefile ok
+/security/sha  makefile ok
+/security/blowfish ok
+/security/rijndael ok
+/telecom/adpcm makefile ok
+/telecom/crc makefile ok
+/telecom/FFT makefile ok
+/telecom/gsm makefile ok
+/office/stringsearch ok
+/office/rsynth ok
+/automotive ok
+
+
+office all except stringsearch bad
+
+blowfish ok
+pgp bad no system good
+
+
+to be done: 
+consumer/mad
+consumer/tiff
+office/ispell
+office/ghostscript
+office/sphinx
+security/pgp

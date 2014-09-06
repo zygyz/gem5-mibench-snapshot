@@ -1,0 +1,18 @@
+make  all-recursive
+make[1]: Entering directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b'
+Making all in intl
+make[2]: Entering directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/intl'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/intl'
+Making all in po
+make[2]: Entering directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/po'
+make[2]: Leaving directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/po'
+Making all in libid3tag
+make[2]: Entering directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/libid3tag'
+make[2]: Leaving directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/libid3tag'
+Making all in libmad
+make[2]: Entering directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/libmad'
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -DFPM_DEFAULT     -Wall -g -O -fforce-mem -fforce-addr -fthread-jumps -fcse-follow-jumps -fcse-skip-blocks -fexpensive-optimizations -fregmove -fschedule-insns2 -c version.c
+gcc -DHAVE_CONFIG_H -I. -I. -I. -DFPM_DEFAULT -Wall -g -O -fforce-mem -fforce-addr -fthread-jumps -fcse-follow-jumps -fcse-skip-blocks -fexpensive-optimizations -fregmove -fschedule-insns2 -c version.c -o version.o
+make[2]: Leaving directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b/libmad'
+make[1]: Leaving directory `/home/gyz/code/architecture/mibench/consumer/mad/mad-0.14.2b'

@@ -1,0 +1,841 @@
+imdct_l_arm.S: Assembler messages:
+imdct_l_arm.S:201: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:213: Error: no such instruction: `stmdb sp!,{r2,r4 - r11,lr}@all callee saved regs,plus arg3'
+imdct_l_arm.S:215: Error: no such instruction: `ldr r4,=0x0ec835e8@r4=0x0ec835e8'
+imdct_l_arm.S:216: Error: no such instruction: `ldr r5,=0x061f78aa@r5=0x061f78aa'
+imdct_l_arm.S:217: Error: no such instruction: `ldr r8,[r0,'
+imdct_l_arm.S:218: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:219: Error: no such instruction: `rsb r6,r4,'
+imdct_l_arm.S:220: Error: no such instruction: `rsb r7,r5,'
+imdct_l_arm.S:222: Error: no such instruction: `smull r2,r3,r4,r8@r2..r3=(0x10 * 0x0ec835e8)'
+imdct_l_arm.S:223: Error: no such instruction: `smlal r2,r3,r5,r9@r2..r3=(0x10 * 0x0ec835e8)+(0x34 * 0x061f78aa)=ct01'
+imdct_l_arm.S:225: Error: no such instruction: `smull r10,lr,r8,r5@r10..lr=(0x10 * 0x061f78aa)'
+imdct_l_arm.S:226: Error: no such instruction: `smlal r10,lr,r9,r6@r10..lr=(0x10 * 0x061f78aa)+(0x34 * -0x0ec835e8)=ct00'
+imdct_l_arm.S:228: Error: no such instruction: `ldr r8,[r0,'
+imdct_l_arm.S:229: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:231: Error: no such instruction: `stmdb sp!,{r2,r3,r10,lr}@stack ct00_h,ct00_l,ct01_h,ct01_l'
+imdct_l_arm.S:233: Error: too many memory references for `add'
+imdct_l_arm.S:234: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:236: Error: no such instruction: `smlal r2,r3,r6,r8@r2..r3=ct01+((0x1c+0x40)* -0x0ec835e8)'
+imdct_l_arm.S:237: Error: no such instruction: `smlal r2,r3,r7,r9@r2..r3+=(0x04 * -0x061f78aa)'
+imdct_l_arm.S:239: Error: no such instruction: `ldr r7,[r0,'
+imdct_l_arm.S:241: Error: no such instruction: `rsbs r10,r10,'
+imdct_l_arm.S:242: Error: no such instruction: `rsc lr,lr,'
+imdct_l_arm.S:244: Error: no such instruction: `smlal r2,r3,r5,r7@r2..r3+=(0x28 * 0x061f78aa)=ct06'
+imdct_l_arm.S:246: Error: no such instruction: `smlal r10,lr,r9,r6@r10..lr=-ct00+( 0x04 * -0x0ec835e8)'
+imdct_l_arm.S:247: Error: no such instruction: `smlal r10,lr,r8,r5@r10..lr+=((0x1c+0x40)* 0x061f78aa)'
+imdct_l_arm.S:248: Error: no such instruction: `smlal r10,lr,r7,r4@r10..lr+=( 0x28 * 0x0ec835e8)=ct04'
+imdct_l_arm.S:250: Error: no such instruction: `stmdb sp!,{r2,r3,r10,lr}@stack ct04_h,ct04_l,ct06_h,ct06_l'
+imdct_l_arm.S:252: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:254: Error: no such instruction: `ldr r7,[r0,'
+imdct_l_arm.S:255: Error: no such instruction: `ldr r8,[r0,'
+imdct_l_arm.S:256: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:257: Error: too many memory references for `sub'
+imdct_l_arm.S:258: Error: too many memory references for `sub'
+imdct_l_arm.S:260: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:261: Error: no such instruction: `ldr r8,[r0,'
+imdct_l_arm.S:262: Error: no such instruction: `ldr r11,[r0,'
+imdct_l_arm.S:263: Error: too many memory references for `sub'
+imdct_l_arm.S:264: Error: too many memory references for `add'
+imdct_l_arm.S:266: Error: too many memory references for `add'
+imdct_l_arm.S:268: Error: no such instruction: `smlal r2,r3,r6,r11@r2..r3=ct06+((0x00 - 0x2c - 0x0C+0x3c+0x20 - 0x30)* -0x0ec835e8)'
+imdct_l_arm.S:270: Error: no such instruction: `ldr r6,[r0,'
+imdct_l_arm.S:271: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:272: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:273: Error: too many memory references for `sub'
+imdct_l_arm.S:274: Error: too many memory references for `sub'
+imdct_l_arm.S:276: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:277: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:278: Error: too many memory references for `sub'
+imdct_l_arm.S:279: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:280: Error: too many memory references for `sub'
+imdct_l_arm.S:282: Error: too many memory references for `add'
+imdct_l_arm.S:284: Error: no such instruction: `smlal r2,r3,r5,r12@r2..r3+=((0x08 - 0x24+0x14 - 0x18 - 0x44 - 0x38)* 0x061f78aa)'
+imdct_l_arm.S:286: Error: no such instruction: `smlal r10,lr,r11,r5@r10..lr=ct04+(ct18 * 0x061f78aa)'
+imdct_l_arm.S:287: Error: no such instruction: `smlal r10,lr,r12,r4@r10..lr=ct04+(ct18 * 0x061f78aa)+(ct19 * 0x0ec835e8)'
+imdct_l_arm.S:289: Warning: `r2' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:289: Warning: `r2' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:289: Error: too many memory references for `movs'
+imdct_l_arm.S:290: Error: too many memory references for `adc'
+imdct_l_arm.S:291: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:293: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:293: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:293: Error: too many memory references for `movs'
+imdct_l_arm.S:294: Error: too many memory references for `adc'
+imdct_l_arm.S:295: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:297: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:299: Error: no such instruction: `ldmia sp,{r2,r3,r4,r5}@r2..r3=ct06,r4..r5=ct04 (dont update sp)'
+imdct_l_arm.S:301: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:302: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:303: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:304: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:305: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:306: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:307: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:308: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:309: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:310: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:312: Error: no such instruction: `ldr r10,=0x0216a2a2@r10=0x0216a2a2'
+imdct_l_arm.S:313: Error: no such instruction: `ldr lr,=0x09bd7ca0@lr=0x09bd7ca0'
+imdct_l_arm.S:315: Error: no such instruction: `smlal r2,r3,r10,r7@r2..r3=ct06+(ct14 * 0x0216a2a2)'
+imdct_l_arm.S:316: Error: no such instruction: `smlal r4,r5,lr,r7@r4..r5=ct04+(ct14 * 0x09bd7ca0)'
+imdct_l_arm.S:318: Error: no such instruction: `ldr r12,=0x0cb19346@r12=0x0cb19346'
+imdct_l_arm.S:319: Error: no such instruction: `rsb r10,r10,'
+imdct_l_arm.S:321: Error: no such instruction: `smlal r2,r3,lr,r6@r2..r3+=(ct15 * 0x09bd7ca0)'
+imdct_l_arm.S:322: Error: no such instruction: `smlal r4,r5,r10,r6@r4..r5+=(ct15 * -0x0216a2a2)'
+imdct_l_arm.S:323: Error: no such instruction: `smlal r2,r3,r12,r8@r2..r3+=(ct16 * 0x0cb19346)'
+imdct_l_arm.S:325: Error: no such instruction: `ldr r11,=0xf0230ab7@r11=-0x0fdcf549'
+imdct_l_arm.S:326: Error: no such instruction: `rsb r12,r12,'
+imdct_l_arm.S:328: Error: no such instruction: `smlal r4,r5,r12,r9@r4..r5+=(ct17 * -0x0cb19346)'
+imdct_l_arm.S:329: Error: no such instruction: `smlal r2,r3,r11,r9@r2..r3+=(ct17 * -0x0fdcf549)'
+imdct_l_arm.S:330: Error: no such instruction: `smlal r4,r5,r11,r8@r4..r5+=(ct16 * -0x0fdcf549)'
+imdct_l_arm.S:332: Warning: `r2' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:332: Warning: `r2' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:332: Error: too many memory references for `movs'
+imdct_l_arm.S:333: Error: too many memory references for `adc'
+imdct_l_arm.S:334: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:336: Warning: `r4' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:336: Warning: `r4' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:336: Error: too many memory references for `movs'
+imdct_l_arm.S:337: Error: too many memory references for `adc'
+imdct_l_arm.S:338: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:340: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:342: Error: no such instruction: `ldmia sp,{r2,r3,r4,r5}@r2..r3=ct06,r4..r5=ct04 (dont update sp)'
+imdct_l_arm.S:344: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:345: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:346: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:347: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:348: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:349: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:350: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:351: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:352: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:353: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:355: Error: no such instruction: `rsbs r2,r2,'
+imdct_l_arm.S:356: Error: no such instruction: `rsc r3,r3,'
+imdct_l_arm.S:358: Error: no such instruction: `smlal r2,r3,r12,r7@r2..r3=-ct06+(ct14 * -0x0cb19346)'
+imdct_l_arm.S:359: Error: no such instruction: `smlal r2,r3,r10,r8@r2..r3+=(ct16 * -0x0216a2a2)'
+imdct_l_arm.S:361: Error: no such instruction: `smlal r4,r5,r12,r6@r4..r5=ct04+(ct15 * -0x0cb19346)'
+imdct_l_arm.S:362: Error: no such instruction: `smlal r4,r5,r10,r9@r4..r5+=(ct17 * -0x0216a2a2)'
+imdct_l_arm.S:363: Error: no such instruction: `smlal r4,r5,lr,r8@r4..r5+=(ct16 * 0x09bd7ca0)'
+imdct_l_arm.S:364: Error: no such instruction: `smlal r4,r5,r11,r7@r4..r5+=(ct14 * -0x0fdcf549)'
+imdct_l_arm.S:366: Error: no such instruction: `rsb lr,lr,'
+imdct_l_arm.S:367: Error: no such instruction: `rsb r11,r11,'
+imdct_l_arm.S:369: Error: no such instruction: `smlal r2,r3,lr,r9@r2..r3+=(ct17 * -0x09bd7ca0)'
+imdct_l_arm.S:370: Error: no such instruction: `smlal r2,r3,r11,r6@r2..r3+=(ct15 * 0x0fdcf549)'
+imdct_l_arm.S:372: Warning: `r4' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:372: Warning: `r4' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:372: Error: too many memory references for `movs'
+imdct_l_arm.S:373: Error: too many memory references for `adc'
+imdct_l_arm.S:374: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:376: Warning: `r2' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:376: Warning: `r2' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:376: Error: too many memory references for `movs'
+imdct_l_arm.S:377: Error: too many memory references for `adc'
+imdct_l_arm.S:378: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:380: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:382: Error: no such instruction: `ldr r2,[sp,'
+imdct_l_arm.S:383: Error: no such instruction: `ldr r3,[sp,'
+imdct_l_arm.S:385: Error: no such instruction: `ldr r6,[r0,'
+imdct_l_arm.S:386: Error: no such instruction: `ldr r8,[r0,'
+imdct_l_arm.S:387: Error: no such instruction: `ldr r9,[r0,'
+imdct_l_arm.S:388: Error: no such instruction: `ldr r7,[r0,'
+imdct_l_arm.S:390: Error: no such instruction: `rsbs r2,r2,'
+imdct_l_arm.S:391: Error: no such instruction: `rsc r3,r3,'
+imdct_l_arm.S:393: Error: too many memory references for `mov'
+imdct_l_arm.S:394: Error: invalid character '=' in operand 2
+imdct_l_arm.S:396: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:397: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:398: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:399: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:400: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:401: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:402: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:403: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:404: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:405: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:407: Error: no such instruction: `smlal r4,r5,r12,r7@r4..r5=-ct01+(0x40 * -0x0cb19346)'
+imdct_l_arm.S:408: Error: no such instruction: `smlal r2,r3,lr,r9@r2..r3=-ct01+(0x28 * -0x09bd7ca0)'
+imdct_l_arm.S:410: Error: no such instruction: `smlal r4,r5,r10,r8@r4..r5+=(0x1c * -0x0216a2a2)'
+imdct_l_arm.S:411: Error: no such instruction: `smlal r2,r3,r10,r7@r2..r3+=(0x40 * -0x0216a2a2)'
+imdct_l_arm.S:413: Error: no such instruction: `smlal r4,r5,r11,r9@r4..r5+=(0x28 * 0x0fdcf549)'
+imdct_l_arm.S:414: Error: no such instruction: `smlal r2,r3,r12,r8@r2..r3+=(0x1c * -0x0cb19346)'
+imdct_l_arm.S:416: Error: no such instruction: `rsb lr,lr,'
+imdct_l_arm.S:417: Error: no such instruction: `rsb r11,r11,'
+imdct_l_arm.S:419: Error: no such instruction: `smlal r4,r5,lr,r6@r4..r5+=(0x04 * 0x09bd7ca0)=ct05'
+imdct_l_arm.S:420: Error: no such instruction: `smlal r2,r3,r11,r6@r2..r3+=(0x04 * -0x0fdcf549)=ct03'
+imdct_l_arm.S:422: Error: no such instruction: `stmdb sp!,{r2,r3,r4,r5}@stack ct05_h,ct05_l,ct03_h,ct03_l'
+imdct_l_arm.S:424: Error: no such instruction: `rsbs r4,r4,'
+imdct_l_arm.S:425: Error: no such instruction: `rsc r5,r5,'
+imdct_l_arm.S:427: Error: no such instruction: `stmdb sp!,{r4,r5}@stack -ct05_h,-ct05_l'
+imdct_l_arm.S:429: Error: no such instruction: `ldr r2,[sp,'
+imdct_l_arm.S:430: Error: no such instruction: `ldr r3,[sp,'
+imdct_l_arm.S:432: Error: no such instruction: `rsb r10,r10,'
+imdct_l_arm.S:434: Error: no such instruction: `rsbs r4,r2,'
+imdct_l_arm.S:435: Error: no such instruction: `rsc r5,r3,'
+imdct_l_arm.S:437: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:438: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:439: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:440: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:441: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:442: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:443: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:444: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:445: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:446: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:448: Error: no such instruction: `smlal r4,r5,r10,r6@r4..r5=-ct00+(0x04 * 0x0216a2a2)'
+imdct_l_arm.S:449: Error: no such instruction: `smlal r2,r3,r10,r9@r2..r3=ct00+(0x28 * 0x0216a2a2)'
+imdct_l_arm.S:451: Error: no such instruction: `smlal r4,r5,r12,r9@r4..r5+=(0x28 * -0x0cb19346)'
+imdct_l_arm.S:452: Error: no such instruction: `smlal r2,r3,r12,r6@r2..r3+=(0x04 * -0x0cb19346)'
+imdct_l_arm.S:454: Error: no such instruction: `smlal r4,r5,r11,r7@r4..r5+=(0x40 * -0x0fdcf549)'
+imdct_l_arm.S:455: Error: no such instruction: `smlal r4,r5,lr,r8@r4..r5+=(0x1c * 0x09bd7ca0)=ct07'
+imdct_l_arm.S:457: Error: no such instruction: `rsb lr,lr,'
+imdct_l_arm.S:458: Error: no such instruction: `rsb r11,r11,'
+imdct_l_arm.S:460: Error: no such instruction: `smlal r2,r3,r11,r8@r2..r3+=(0x1c * 0x0fdcf549)'
+imdct_l_arm.S:461: Error: no such instruction: `smlal r2,r3,lr,r7@r2..r3+=(0x40 * -0x09bd7ca0)=ct02'
+imdct_l_arm.S:463: Error: no such instruction: `rsbs r6,r4,'
+imdct_l_arm.S:464: Error: no such instruction: `rsc r7,r5,'
+imdct_l_arm.S:466: Error: no such instruction: `stmdb sp!,{r2 - r7}@stack -ct07_h,-ct07_l,ct07_h,ct07_l,ct02_h,ct02_l'
+imdct_l_arm.S:469: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:471: Error: too many memory references for `add'
+imdct_l_arm.S:475: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:477: Error: no such instruction: `ldmia r2!,{r5 - r11}@first 7 words from Karray element'
+imdct_l_arm.S:479: Error: no such instruction: `smull r3,r4,r5,r12@sum=(Kxx * 0x00)'
+imdct_l_arm.S:480: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:481: Error: no such instruction: `ldr r5,[r0,'
+imdct_l_arm.S:482: Error: no such instruction: `smlal r3,r4,r6,r12@sum+=(Kxx * 0x08)'
+imdct_l_arm.S:483: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:484: Error: no such instruction: `ldr r6,[r0,'
+imdct_l_arm.S:485: Error: no such instruction: `smlal r3,r4,r7,r5@sum+=(Kxx * 0x0C)'
+imdct_l_arm.S:486: Error: no such instruction: `smlal r3,r4,r8,r12@sum+=(Kxx * 0x14)'
+imdct_l_arm.S:487: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:488: Error: no such instruction: `ldr r5,[r0,'
+imdct_l_arm.S:489: Error: no such instruction: `smlal r3,r4,r9,r6@sum+=(Kxx * 0x18)'
+imdct_l_arm.S:490: Error: no such instruction: `smlal r3,r4,r10,r12@sum+=(Kxx * 0x20)'
+imdct_l_arm.S:491: Error: no such instruction: `smlal r3,r4,r11,r5@sum+=(Kxx * 0x24)'
+imdct_l_arm.S:493: Error: no such instruction: `ldmia r2!,{r5 - r10}@final 6 words from Karray element'
+imdct_l_arm.S:495: Error: no such instruction: `ldr r11,[r0,'
+imdct_l_arm.S:496: Error: no such instruction: `ldr r12,[r0,'
+imdct_l_arm.S:497: Error: no such instruction: `smlal r3,r4,r5,r11@sum+=(Kxx * 0x2c)'
+imdct_l_arm.S:498: Error: no such instruction: `ldr r11,[r0,'
+imdct_l_arm.S:499: Error: no such instruction: `ldr r5,[r0,'
+imdct_l_arm.S:500: Error: no such instruction: `smlal r3,r4,r6,r12@sum+=(Kxx * 0x30)'
+imdct_l_arm.S:501: Error: no such instruction: `smlal r3,r4,r7,r11@sum+=(Kxx * 0x38)'
+imdct_l_arm.S:502: Error: no such instruction: `ldr r11,[r0,'
+imdct_l_arm.S:503: Error: no such instruction: `smlal r3,r4,r8,r5@sum+=(Kxx * 0x3c)'
+imdct_l_arm.S:504: Error: no such instruction: `smlal r3,r4,r9,r11@sum+=(Kxx * 0x44)'
+imdct_l_arm.S:506: Error: too many memory references for `add'
+imdct_l_arm.S:508: Error: no such instruction: `ldmia r5,{r6,r7}@r6..r7=ctxx'
+imdct_l_arm.S:510: Error: too many memory references for `mov'
+imdct_l_arm.S:512: Error: too many memory references for `add'
+imdct_l_arm.S:513: Error: too many memory references for `adc'
+imdct_l_arm.S:514: Warning: `r3' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:514: Warning: `r3' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:514: Error: too many memory references for `movs'
+imdct_l_arm.S:515: Error: too many memory references for `adc'
+imdct_l_arm.S:517: Error: invalid char '[' beginning operand 2 `[r1'
+imdct_l_arm.S:519: Warning: `r8' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:519: Warning: `r8' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:519: Error: too many memory references for `movs'
+imdct_l_arm.S:520: Error: no such instruction: `beq loop@loop back if completion flag not set'
+imdct_l_arm.S:521: Error: no such instruction: `b imdct_l_windowing@branch to windowing stage if looping finished'
+imdct_l_arm.S:525: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:525: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:525: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:525: Warning: value 0xfffffffff0bd934b truncated to 0x934b
+imdct_l_arm.S:525: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:525: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:525: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:525: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:525: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:525: Warning: value 0x7635284 truncated to 0x5284
+imdct_l_arm.S:525: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:525: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:526: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:526: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:526: Warning: value 0xbcbe352 truncated to 0xe352
+imdct_l_arm.S:526: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:526: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:526: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:526: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:526: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:526: Warning: value 0xffc19fd truncated to 0x19fd
+imdct_l_arm.S:526: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:526: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:526: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:526: Warning: value 0x200800 truncated to 0x800
+imdct_l_arm.S:527: Warning: value 0x7635284 truncated to 0x5284
+imdct_l_arm.S:527: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:527: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:527: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:527: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:527: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:527: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:527: Warning: value 0xffc19fd truncated to 0x19fd
+imdct_l_arm.S:527: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:527: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:527: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:527: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:527: Warning: value 0x200c00 truncated to 0xc00
+imdct_l_arm.S:528: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:528: Warning: value 0xffc19fd truncated to 0x19fd
+imdct_l_arm.S:528: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:528: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:528: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:528: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:528: Warning: value 0x7635284 truncated to 0x5284
+imdct_l_arm.S:528: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:528: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:528: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:528: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:528: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:529: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:529: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:529: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:529: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:529: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:529: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:529: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:529: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:529: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:529: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:529: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:529: Warning: value 0xfffffffff0611770 truncated to 0x1770
+imdct_l_arm.S:529: Warning: value 0x181800 truncated to 0x1800
+imdct_l_arm.S:530: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:530: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:530: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:530: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:530: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:530: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:530: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:530: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:530: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:530: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:530: Warning: value 0xfffffffff0611770 truncated to 0x1770
+imdct_l_arm.S:530: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:530: Warning: value 0x102000 truncated to 0x2000
+imdct_l_arm.S:531: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:531: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:531: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:531: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:531: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:531: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:531: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:531: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:531: Warning: value 0xfffffffff0bd934b truncated to 0x934b
+imdct_l_arm.S:531: Warning: value 0xe313245 truncated to 0x3245
+imdct_l_arm.S:531: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:531: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:531: Warning: value 0x284800 truncated to 0x4800
+imdct_l_arm.S:532: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:532: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:532: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:532: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:532: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:532: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:532: Warning: value 0x3768962 truncated to 0x8962
+imdct_l_arm.S:532: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:532: Warning: value 0xb2aa3e truncated to 0xaa3e
+imdct_l_arm.S:532: Warning: value 0xbcbe352 truncated to 0xe352
+imdct_l_arm.S:532: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:532: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:532: Warning: value 0x85000 truncated to 0x5000
+imdct_l_arm.S:533: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:533: Warning: value 0xbcbe352 truncated to 0xe352
+imdct_l_arm.S:533: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:533: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:533: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:533: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:533: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:533: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:533: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:533: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:533: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:533: Warning: value 0x7635284 truncated to 0x5284
+imdct_l_arm.S:533: Warning: value 0x105400 truncated to 0x5400
+imdct_l_arm.S:534: Warning: value 0xfffffffff0bd934b truncated to 0x934b
+imdct_l_arm.S:534: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:534: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:534: Warning: value 0xf9ee890 truncated to 0xe890
+imdct_l_arm.S:534: Warning: value 0xacf37ad truncated to 0x37ad
+imdct_l_arm.S:534: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:534: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:534: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:534: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:534: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:534: Warning: value 0xffc19fd truncated to 0x19fd
+imdct_l_arm.S:534: Warning: value 0x4cfb0e2 truncated to 0xb0e2
+imdct_l_arm.S:534: Warning: value 0x185c00 truncated to 0x5c00
+imdct_l_arm.S:535: Warning: value 0xfffffffff0611770 truncated to 0x1770
+imdct_l_arm.S:535: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:535: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:535: Warning: value 0xbcbe352 truncated to 0xe352
+imdct_l_arm.S:535: Warning: value 0xf426cb5 truncated to 0x6cb5
+imdct_l_arm.S:535: Warning: value 0xd7e8807 truncated to 0x8807
+imdct_l_arm.S:535: Warning: value 0x898c779 truncated to 0xc779
+imdct_l_arm.S:535: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:535: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:535: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:535: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:535: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:536: Warning: value 0xfffffffff003e603 truncated to 0xe603
+imdct_l_arm.S:536: Warning: value 0xfffffffff0611770 truncated to 0x1770
+imdct_l_arm.S:536: Warning: value 0xfffffffff0bd934b truncated to 0x934b
+imdct_l_arm.S:536: Warning: value 0xfffffffff1cecdbb truncated to 0xcdbb
+imdct_l_arm.S:536: Warning: value 0xfffffffff28177f9 truncated to 0x77f9
+imdct_l_arm.S:536: Warning: value 0xfffffffff4341cae truncated to 0x1cae
+imdct_l_arm.S:536: Warning: value 0xfffffffff530c853 truncated to 0xc853
+imdct_l_arm.S:536: Warning: value 0xfffffffff7673887 truncated to 0x3887
+imdct_l_arm.S:536: Warning: value 0xfffffffff89cad7c truncated to 0xad7c
+imdct_l_arm.S:536: Warning: value 0xfffffffffb304f1e truncated to 0x4f1e
+imdct_l_arm.S:536: Warning: value 0xfffffffffc89769e truncated to 0x769e
+imdct_l_arm.S:536: Warning: value 0xffffffffff4d55c2 truncated to 0x55c2
+imdct_l_arm.S:536: Warning: value 0x206801 truncated to 0x6801
+imdct_l_arm.S:539: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:540: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:541: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:545: Error: no such instruction: `ldr r11,[sp,'
+imdct_l_arm.S:546: Error: no such instruction: `ldmia r1!,{r0,r2 - r9}@load 9 words from 0x00,update pointer'
+imdct_l_arm.S:548: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:549: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:550: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:551: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:552: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:553: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:554: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:555: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:556: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:557: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:558: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:559: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:560: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:561: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:563: Error: expecting operand after ','; got nothing
+imdct_l_arm.S:564: Error: no such instruction: `rsb r10,r0,'
+imdct_l_arm.S:565: Error: no such instruction: `beq stop_block_x0_to_x17'
+imdct_l_arm.S:568: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:572: Error: no such instruction: `ldr r12,=0x0bcbe352@r12=window_l[9]'
+imdct_l_arm.S:574: Error: no such instruction: `rsb r0,r9,'
+imdct_l_arm.S:575: Error: no such instruction: `rsb r9,r2,'
+imdct_l_arm.S:576: Error: no such instruction: `rsb r2,r8,'
+imdct_l_arm.S:577: Error: no such instruction: `rsb r8,r3,'
+imdct_l_arm.S:578: Error: no such instruction: `rsb r3,r7,'
+imdct_l_arm.S:579: Error: no such instruction: `rsb r7,r4,'
+imdct_l_arm.S:580: Error: no such instruction: `rsb r4,r6,'
+imdct_l_arm.S:581: Error: no such instruction: `rsb r6,r5,'
+imdct_l_arm.S:583: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:584: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:585: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:586: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:587: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:588: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:589: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:590: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:591: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:592: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:593: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:594: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:595: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:596: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:598: Error: no such instruction: `smull r5,lr,r12,r0@r5..lr=(window_l[9]* (x[9]==-x[8]))'
+imdct_l_arm.S:599: Error: no such instruction: `ldr r12,=0x0cb19346@r12=window_l[10]'
+imdct_l_arm.S:600: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:600: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:600: Error: too many memory references for `movs'
+imdct_l_arm.S:601: Error: too many memory references for `adc'
+imdct_l_arm.S:603: Error: no such instruction: `smull r5,lr,r12,r2@r5..lr=(window_l[10]* (x[10]==-x[7]))'
+imdct_l_arm.S:604: Error: no such instruction: `ldr r12,=0x0d7e8807@r12=window_l[11]'
+imdct_l_arm.S:605: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:605: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:605: Error: too many memory references for `movs'
+imdct_l_arm.S:606: Error: too many memory references for `adc'
+imdct_l_arm.S:608: Error: no such instruction: `smull r5,lr,r12,r3@r5..lr=(window_l[11]* (x[11]==-x[6]))'
+imdct_l_arm.S:609: Error: no such instruction: `ldr r12,=0x0e313245@r12=window_l[12]'
+imdct_l_arm.S:610: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:610: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:610: Error: too many memory references for `movs'
+imdct_l_arm.S:611: Error: too many memory references for `adc'
+imdct_l_arm.S:613: Error: no such instruction: `smull r5,lr,r12,r4@r5..lr=(window_l[12]* (x[12]==-x[5]))'
+imdct_l_arm.S:614: Error: no such instruction: `ldr r12,=0x0ec835e8@r12=window_l[13]'
+imdct_l_arm.S:615: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:615: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:615: Error: too many memory references for `movs'
+imdct_l_arm.S:616: Error: too many memory references for `adc'
+imdct_l_arm.S:618: Error: no such instruction: `smull r5,lr,r12,r6@r5..lr=(window_l[13]* (x[13]==-x[4]))'
+imdct_l_arm.S:619: Error: no such instruction: `ldr r12,=0x0f426cb5@r12=window_l[14]'
+imdct_l_arm.S:620: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:620: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:620: Error: too many memory references for `movs'
+imdct_l_arm.S:621: Error: too many memory references for `adc'
+imdct_l_arm.S:623: Error: no such instruction: `smull r5,lr,r12,r7@r5..lr=(window_l[14]* (x[14]==-x[3]))'
+imdct_l_arm.S:624: Error: no such instruction: `ldr r12,=0x0f9ee890@r12=window_l[15]'
+imdct_l_arm.S:625: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:625: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:625: Error: too many memory references for `movs'
+imdct_l_arm.S:626: Error: too many memory references for `adc'
+imdct_l_arm.S:628: Error: no such instruction: `smull r5,lr,r12,r8@r5..lr=(window_l[15]* (x[15]==-x[2]))'
+imdct_l_arm.S:629: Error: no such instruction: `ldr r12,=0x0fdcf549@r12=window_l[16]'
+imdct_l_arm.S:630: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:630: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:630: Error: too many memory references for `movs'
+imdct_l_arm.S:631: Error: too many memory references for `adc'
+imdct_l_arm.S:633: Error: no such instruction: `smull r5,lr,r12,r9@r5..lr=(window_l[16]* (x[16]==-x[1]))'
+imdct_l_arm.S:634: Error: no such instruction: `ldr r12,=0x0ffc19fd@r12=window_l[17]'
+imdct_l_arm.S:635: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:635: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:635: Error: too many memory references for `movs'
+imdct_l_arm.S:636: Error: too many memory references for `adc'
+imdct_l_arm.S:638: Error: no such instruction: `smull r5,lr,r12,r10@r5..lr=(window_l[17]* (x[17]==-x[0]))'
+imdct_l_arm.S:639: Error: no such instruction: `ldr r12,=0x00b2aa3e@r12=window_l[0]'
+imdct_l_arm.S:640: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:640: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:640: Error: too many memory references for `movs'
+imdct_l_arm.S:641: Error: too many memory references for `adc'
+imdct_l_arm.S:644: Error: no such instruction: `stmia r1,{r0,r2 - r4,r6 - r10}@store windowed x[9].. x[17]'
+imdct_l_arm.S:645: Error: no such instruction: `ldmdb r1!,{r0,r2 - r9}@load 9 words downto (and including)0x00'
+imdct_l_arm.S:648: Error: no such instruction: `smull r10,lr,r12,r0@r10..lr=(window_l[0]* x[0])'
+imdct_l_arm.S:649: Error: no such instruction: `ldr r12,=0x0216a2a2@r12=window_l[1]'
+imdct_l_arm.S:650: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:650: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:650: Error: too many memory references for `movs'
+imdct_l_arm.S:651: Error: too many memory references for `adc'
+imdct_l_arm.S:653: Error: no such instruction: `smull r10,lr,r12,r2@r10..lr=(window_l[1]* x[1])'
+imdct_l_arm.S:654: Error: no such instruction: `ldr r12,=0x03768962@r12=window_l[2]'
+imdct_l_arm.S:655: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:655: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:655: Error: too many memory references for `movs'
+imdct_l_arm.S:656: Error: too many memory references for `adc'
+imdct_l_arm.S:658: Error: no such instruction: `smull r10,lr,r12,r3@r10..lr=(window_l[2]* x[2])'
+imdct_l_arm.S:659: Error: no such instruction: `ldr r12,=0x04cfb0e2@r12=window_l[3]'
+imdct_l_arm.S:660: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:660: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:660: Error: too many memory references for `movs'
+imdct_l_arm.S:661: Error: too many memory references for `adc'
+imdct_l_arm.S:663: Error: no such instruction: `smull r10,lr,r12,r4@r10..lr=(window_l[3]* x[3])'
+imdct_l_arm.S:664: Error: no such instruction: `ldr r12,=0x061f78aa@r12=window_l[4]'
+imdct_l_arm.S:665: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:665: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:665: Error: too many memory references for `movs'
+imdct_l_arm.S:666: Error: too many memory references for `adc'
+imdct_l_arm.S:668: Error: no such instruction: `smull r10,lr,r12,r5@r10..lr=(window_l[4]* x[4])'
+imdct_l_arm.S:669: Error: no such instruction: `ldr r12,=0x07635284@r12=window_l[5]'
+imdct_l_arm.S:670: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:670: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:670: Error: too many memory references for `movs'
+imdct_l_arm.S:671: Error: too many memory references for `adc'
+imdct_l_arm.S:673: Error: no such instruction: `smull r10,lr,r12,r6@r10..lr=(window_l[5]* x[5])'
+imdct_l_arm.S:674: Error: no such instruction: `ldr r12,=0x0898c779@r12=window_l[6]'
+imdct_l_arm.S:675: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:675: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:675: Error: too many memory references for `movs'
+imdct_l_arm.S:676: Error: too many memory references for `adc'
+imdct_l_arm.S:678: Error: no such instruction: `smull r10,lr,r12,r7@r10..lr=(window_l[6]* x[6])'
+imdct_l_arm.S:679: Error: no such instruction: `ldr r12,=0x09bd7ca0@r12=window_l[7]'
+imdct_l_arm.S:680: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:680: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:680: Error: too many memory references for `movs'
+imdct_l_arm.S:681: Error: too many memory references for `adc'
+imdct_l_arm.S:683: Error: no such instruction: `smull r10,lr,r12,r8@r10..lr=(window_l[7]* x[7])'
+imdct_l_arm.S:684: Error: no such instruction: `ldr r12,=0x0acf37ad@r12=window_l[8]'
+imdct_l_arm.S:685: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:685: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:685: Error: too many memory references for `movs'
+imdct_l_arm.S:686: Error: too many memory references for `adc'
+imdct_l_arm.S:688: Error: no such instruction: `smull r10,lr,r12,r9@r10..lr=(window_l[8]* x[8])'
+imdct_l_arm.S:689: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:689: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:689: Error: too many memory references for `movs'
+imdct_l_arm.S:690: Error: too many memory references for `adc'
+imdct_l_arm.S:692: Error: no such instruction: `stmia r1,{r0,r2 - r9}@store windowed x[0].. x[8]'
+imdct_l_arm.S:694: Error: expecting operand after ','; got nothing
+imdct_l_arm.S:695: Error: no such instruction: `beq start_block_x18_to_x35'
+imdct_l_arm.S:698: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:703: Error: no such instruction: `ldr r11,=0x04cfb0e2@r11=window_l[3]'
+imdct_l_arm.S:704: Error: no such instruction: `ldr r12,=0x061f78aa@r12=window_l[4]'
+imdct_l_arm.S:706: Error: too many memory references for `add'
+imdct_l_arm.S:708: Error: no such instruction: `ldmia r1!,{r0,r2 - r4,r6 - r10}@load 9 words from 0x48,update pointer'
+imdct_l_arm.S:710: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:711: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:712: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:713: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:714: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:715: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:716: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:717: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:718: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:719: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:720: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:721: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:722: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:723: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:725: Error: no such instruction: `smull r5,lr,r12,r6@r5..lr=(window_l[4]* (x[22]==x[31]))'
+imdct_l_arm.S:726: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:726: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:726: Error: too many memory references for `movs'
+imdct_l_arm.S:727: Error: too many memory references for `adc'
+imdct_l_arm.S:729: Error: no such instruction: `smull r6,lr,r11,r4@r5..lr=(window_l[3]* (x[21]==x[32]))'
+imdct_l_arm.S:730: Error: no such instruction: `ldr r12,=0x07635284@r12=window_l[5]'
+imdct_l_arm.S:731: Warning: `r6' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:731: Warning: `r6' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:731: Error: too many memory references for `movs'
+imdct_l_arm.S:732: Error: too many memory references for `adc'
+imdct_l_arm.S:734: Error: no such instruction: `smull r4,lr,r12,r7@r4..lr=(window_l[5]* (x[23]==x[30]))'
+imdct_l_arm.S:735: Error: no such instruction: `ldr r11,=0x0216a2a2@r11=window_l[1]'
+imdct_l_arm.S:736: Error: no such instruction: `ldr r12,=0x03768962@r12=window_l[2]'
+imdct_l_arm.S:737: Warning: `r4' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:737: Warning: `r4' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:737: Error: too many memory references for `movs'
+imdct_l_arm.S:738: Error: too many memory references for `adc'
+imdct_l_arm.S:740: Error: no such instruction: `smull r7,lr,r12,r3@r7..lr=(window_l[2]* (x[20]==x[33]))'
+imdct_l_arm.S:741: Error: no such instruction: `ldr r12,=0x0898c779@r12=window_l[6]'
+imdct_l_arm.S:742: Warning: `r7' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:742: Warning: `r7' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:742: Error: too many memory references for `movs'
+imdct_l_arm.S:743: Error: too many memory references for `adc'
+imdct_l_arm.S:745: Error: no such instruction: `smull r3,lr,r12,r8@r3..lr=(window_l[6]* (x[24]==x[29]))'
+imdct_l_arm.S:746: Warning: `r3' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:746: Warning: `r3' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:746: Error: too many memory references for `movs'
+imdct_l_arm.S:747: Error: too many memory references for `adc'
+imdct_l_arm.S:749: Error: no such instruction: `smull r8,lr,r11,r2@r7..lr=(window_l[1]* (x[19]==x[34]))'
+imdct_l_arm.S:750: Error: no such instruction: `ldr r12,=0x09bd7ca0@r12=window_l[7]'
+imdct_l_arm.S:751: Error: no such instruction: `ldr r11,=0x0acf37ad@r11=window_l[8]'
+imdct_l_arm.S:752: Warning: `r8' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:752: Warning: `r8' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:752: Error: too many memory references for `movs'
+imdct_l_arm.S:753: Error: too many memory references for `adc'
+imdct_l_arm.S:755: Error: no such instruction: `smull r2,lr,r12,r9@r7..lr=(window_l[7]* (x[25]==x[28]))'
+imdct_l_arm.S:756: Error: no such instruction: `ldr r12,=0x00b2aa3e@r12=window_l[0]'
+imdct_l_arm.S:757: Warning: `r2' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:757: Warning: `r2' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:757: Error: too many memory references for `movs'
+imdct_l_arm.S:758: Error: too many memory references for `adc'
+imdct_l_arm.S:760: Error: no such instruction: `smull r9,lr,r12,r0@r3..lr=(window_l[0]* (x[18]==x[35]))'
+imdct_l_arm.S:761: Warning: `r9' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:761: Warning: `r9' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:761: Error: too many memory references for `movs'
+imdct_l_arm.S:762: Error: too many memory references for `adc'
+imdct_l_arm.S:764: Error: no such instruction: `smull r0,lr,r11,r10@r7..lr=(window_l[8]* (x[26]==x[27]))'
+imdct_l_arm.S:765: Error: no such instruction: `ldr r11,=0x0fdcf549@r11=window_l[16]'
+imdct_l_arm.S:766: Error: no such instruction: `ldr r12,=0x0ffc19fd@r12=window_l[17]'
+imdct_l_arm.S:767: Warning: `r0' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:767: Warning: `r0' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:767: Error: too many memory references for `movs'
+imdct_l_arm.S:768: Error: too many memory references for `adc'
+imdct_l_arm.S:771: Error: no such instruction: `stmia r1,{r0,r2 - r9}@store windowed x[27].. x[35]'
+imdct_l_arm.S:772: Error: no such instruction: `ldmdb r1!,{r0,r2 - r9}@load 9 words downto (and including)0x48'
+imdct_l_arm.S:775: Error: no such instruction: `smull r10,lr,r12,r0@r10..lr=(window_l[17]* x[18])'
+imdct_l_arm.S:776: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:776: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:776: Error: too many memory references for `movs'
+imdct_l_arm.S:777: Error: too many memory references for `adc'
+imdct_l_arm.S:779: Error: no such instruction: `smull r10,lr,r11,r2@r10..lr=(window_l[16]* x[19])'
+imdct_l_arm.S:780: Error: no such instruction: `ldr r11,=0x0f426cb5@r11=window_l[14]'
+imdct_l_arm.S:781: Error: no such instruction: `ldr r12,=0x0f9ee890@r12=window_l[15]'
+imdct_l_arm.S:782: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:782: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:782: Error: too many memory references for `movs'
+imdct_l_arm.S:783: Error: too many memory references for `adc'
+imdct_l_arm.S:785: Error: no such instruction: `smull r10,lr,r12,r3@r10..lr=(window_l[15]* x[20])'
+imdct_l_arm.S:786: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:786: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:786: Error: too many memory references for `movs'
+imdct_l_arm.S:787: Error: too many memory references for `adc'
+imdct_l_arm.S:789: Error: no such instruction: `smull r10,lr,r11,r4@r10..lr=(window_l[14]* x[21])'
+imdct_l_arm.S:790: Error: no such instruction: `ldr r11,=0x0e313245@r11=window_l[12]'
+imdct_l_arm.S:791: Error: no such instruction: `ldr r12,=0x0ec835e8@r12=window_l[13]'
+imdct_l_arm.S:792: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:792: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:792: Error: too many memory references for `movs'
+imdct_l_arm.S:793: Error: too many memory references for `adc'
+imdct_l_arm.S:795: Error: no such instruction: `smull r10,lr,r12,r5@r10..lr=(window_l[13]* x[22])'
+imdct_l_arm.S:796: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:796: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:796: Error: too many memory references for `movs'
+imdct_l_arm.S:797: Error: too many memory references for `adc'
+imdct_l_arm.S:799: Error: no such instruction: `smull r10,lr,r11,r6@r10..lr=(window_l[12]* x[23])'
+imdct_l_arm.S:800: Error: no such instruction: `ldr r11,=0x0cb19346@r12=window_l[10]'
+imdct_l_arm.S:801: Error: no such instruction: `ldr r12,=0x0d7e8807@r12=window_l[11]'
+imdct_l_arm.S:802: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:802: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:802: Error: too many memory references for `movs'
+imdct_l_arm.S:803: Error: too many memory references for `adc'
+imdct_l_arm.S:805: Error: no such instruction: `smull r10,lr,r12,r7@r10..lr=(window_l[11]* x[24])'
+imdct_l_arm.S:806: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:806: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:806: Error: too many memory references for `movs'
+imdct_l_arm.S:807: Error: too many memory references for `adc'
+imdct_l_arm.S:809: Error: no such instruction: `smull r10,lr,r11,r8@r10..lr=(window_l[10]* x[25])'
+imdct_l_arm.S:810: Error: no such instruction: `ldr r12,=0x0bcbe352@r12=window_l[9]'
+imdct_l_arm.S:811: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:811: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:811: Error: too many memory references for `movs'
+imdct_l_arm.S:812: Error: too many memory references for `adc'
+imdct_l_arm.S:814: Error: no such instruction: `smull r10,lr,r12,r9@r10..lr=(window_l[9]* x[26])'
+imdct_l_arm.S:816: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:816: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:816: Error: too many memory references for `movs'
+imdct_l_arm.S:817: Error: too many memory references for `adc'
+imdct_l_arm.S:819: Error: no such instruction: `stmia r1,{r0,r2 - r9}@store windowed x[18].. x[26]'
+imdct_l_arm.S:821: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:822: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:823: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:825: Error: too many memory references for `add'
+imdct_l_arm.S:826: Error: no such instruction: `ldmia sp!,{r4 - r11,pc}@restore callee saved regs,and return'
+imdct_l_arm.S:828: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:833: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:834: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:835: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:836: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:837: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:838: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:839: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:840: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:841: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:842: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:843: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:844: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:845: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:846: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:848: Error: no such instruction: `rsb r0,r6,'
+imdct_l_arm.S:849: Error: no such instruction: `rsb r6,r2,'
+imdct_l_arm.S:850: Error: no such instruction: `rsb r2,r5,'
+imdct_l_arm.S:851: Error: no such instruction: `rsb r5,r3,'
+imdct_l_arm.S:852: Error: no such instruction: `rsb r3,r4,'
+imdct_l_arm.S:854: Error: too many memory references for `add'
+imdct_l_arm.S:855: Error: no such instruction: `stmia r1,{r0,r2,r3,r5,r6,r10}@store unchanged x[12].. x[17]'
+imdct_l_arm.S:857: Error: no such instruction: `ldr r0,=0x0216a2a2@r0=window_l[1]==window_s[0]'
+imdct_l_arm.S:859: Error: no such instruction: `rsb r10,r9,'
+imdct_l_arm.S:860: Error: no such instruction: `rsb r12,r8,'
+imdct_l_arm.S:861: Error: no such instruction: `rsb lr,r7,'
+imdct_l_arm.S:863: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:864: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:865: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:866: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:867: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:868: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:869: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:870: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:871: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:872: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:873: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:874: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:875: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:876: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:878: Error: no such instruction: `smull r5,r6,r0,r7@r5..r6=(window_l[1]* x[6])'
+imdct_l_arm.S:879: Error: no such instruction: `ldr r2,=0x061f78aa@r2=window_l[4]==window_s[1]'
+imdct_l_arm.S:880: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:880: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:880: Error: too many memory references for `movs'
+imdct_l_arm.S:881: Error: too many memory references for `adc'
+imdct_l_arm.S:883: Error: no such instruction: `smull r5,r6,r2,r8@r5..r6=(window_l[4]* x[7])'
+imdct_l_arm.S:884: Error: no such instruction: `ldr r3,=0x09bd7ca0@r3=window_l[7]==window_s[2]'
+imdct_l_arm.S:885: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:885: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:885: Error: too many memory references for `movs'
+imdct_l_arm.S:886: Error: too many memory references for `adc'
+imdct_l_arm.S:888: Error: no such instruction: `smull r5,r6,r3,r9@r5..r6=(window_l[7]* x[8])'
+imdct_l_arm.S:889: Error: no such instruction: `ldr r4,=0x0cb19346@r4=window_l[10]==window_s[3]'
+imdct_l_arm.S:890: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:890: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:890: Error: too many memory references for `movs'
+imdct_l_arm.S:891: Error: too many memory references for `adc'
+imdct_l_arm.S:893: Error: no such instruction: `smull r5,r6,r4,r10@r5..r6=(window_l[10]* (x[9]==-x[8]))'
+imdct_l_arm.S:894: Error: no such instruction: `ldr r0,=0x0ec835e8@r0=window_l[13]==window_s[4]'
+imdct_l_arm.S:895: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:895: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:895: Error: too many memory references for `movs'
+imdct_l_arm.S:896: Error: too many memory references for `adc'
+imdct_l_arm.S:898: Error: no such instruction: `smull r5,r6,r0,r12@r5..r6=(window_l[13]* (x[10]==-x[7]))'
+imdct_l_arm.S:899: Error: no such instruction: `ldr r2,=0x0fdcf549@r2=window_l[16]==window_s[5]'
+imdct_l_arm.S:900: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:900: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:900: Error: too many memory references for `movs'
+imdct_l_arm.S:901: Error: too many memory references for `adc'
+imdct_l_arm.S:903: Error: no such instruction: `smull r5,r6,r2,lr@r5..r6=(window_l[16]* (x[11]==-x[6]))'
+imdct_l_arm.S:905: Error: no such instruction: `ldr r0,=0x00'
+imdct_l_arm.S:907: Warning: `r5' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:907: Warning: `r5' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:907: Error: too many memory references for `movs'
+imdct_l_arm.S:908: Error: too many memory references for `adc'
+imdct_l_arm.S:910: Error: no such instruction: `stmdb r1!,{r7 - r10,r12,lr}@store windowed x[6].. x[11]'
+imdct_l_arm.S:912: Error: no such instruction: `ldr r5,=0x00'
+imdct_l_arm.S:913: Error: no such instruction: `ldr r6,=0x00'
+imdct_l_arm.S:914: Error: no such instruction: `ldr r2,=0x00'
+imdct_l_arm.S:915: Error: no such instruction: `ldr r3,=0x00'
+imdct_l_arm.S:916: Error: no such instruction: `ldr r4,=0x00'
+imdct_l_arm.S:918: Error: no such instruction: `stmdb r1!,{r0,r2 - r6}@store windowed x[0].. x[5]'
+imdct_l_arm.S:920: Error: no such instruction: `b normal_block_x18_to_x35'
+imdct_l_arm.S:923: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:928: Error: no such instruction: `ldr r4,=0x0216a2a2@r0=window_l[1]==window_s[0]'
+imdct_l_arm.S:930: Error: too many memory references for `add'
+imdct_l_arm.S:932: Error: no such instruction: `ldmia r1,{r0,r2,r3}@load 3 words from 0x60,dont update pointer'
+imdct_l_arm.S:934: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:935: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:936: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:937: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:938: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:939: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:940: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:941: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:942: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:943: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:944: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:945: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:946: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:947: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:949: Error: no such instruction: `ldr r5,=0x061f78aa@r5=window_l[4]==window_s[1]'
+imdct_l_arm.S:951: Error: no such instruction: `smull r10,r11,r4,r0@r10..r11=(window_l[1]* (x[24]==x[29]))'
+imdct_l_arm.S:952: Error: no such instruction: `ldr r6,=0x09bd7ca0@r6=window_l[7]==window_s[2]'
+imdct_l_arm.S:953: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:953: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:953: Error: too many memory references for `movs'
+imdct_l_arm.S:954: Error: too many memory references for `adc'
+imdct_l_arm.S:956: Error: no such instruction: `smull r10,r11,r5,r2@r10..r11=(window_l[4]* (x[25]==x[28]))'
+imdct_l_arm.S:957: Error: no such instruction: `ldr r7,=0x0cb19346@r7=window_l[10]==window_s[3]'
+imdct_l_arm.S:958: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:958: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:958: Error: too many memory references for `movs'
+imdct_l_arm.S:959: Error: too many memory references for `adc'
+imdct_l_arm.S:961: Error: no such instruction: `smull r10,r11,r6,r3@r10..r11=(window_l[7]* (x[26]==x[27]))'
+imdct_l_arm.S:962: Error: no such instruction: `ldr r8,=0x0ec835e8@r8=window_l[13]==window_s[4]'
+imdct_l_arm.S:963: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:963: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:963: Error: too many memory references for `movs'
+imdct_l_arm.S:964: Error: too many memory references for `adc'
+imdct_l_arm.S:966: Error: no such instruction: `smull r10,r11,r7,r3@r10..r11=(window_l[10]* x[26])'
+imdct_l_arm.S:967: Error: no such instruction: `ldr r9,=0x0fdcf549@r9=window_l[16]==window_s[5]'
+imdct_l_arm.S:968: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:968: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:968: Error: too many memory references for `movs'
+imdct_l_arm.S:969: Error: too many memory references for `adc'
+imdct_l_arm.S:971: Error: no such instruction: `smull r10,r11,r8,r2@r10..r11=(window_l[13]* x[25])'
+imdct_l_arm.S:972: Error: no such instruction: `ldr r5,=0x00'
+imdct_l_arm.S:973: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:973: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:973: Error: too many memory references for `movs'
+imdct_l_arm.S:974: Error: too many memory references for `adc'
+imdct_l_arm.S:976: Error: no such instruction: `smull r10,r11,r9,r0@r10..r11=(window_l[16]* x[24])'
+imdct_l_arm.S:977: Error: no such instruction: `ldr r6,=0x00'
+imdct_l_arm.S:978: Warning: `r10' is not valid here (expected `(%rsi)')
+imdct_l_arm.S:978: Warning: `r10' is not valid here (expected `(%rdi)')
+imdct_l_arm.S:978: Error: too many memory references for `movs'
+imdct_l_arm.S:979: Error: too many memory references for `adc'
+imdct_l_arm.S:981: Error: no such instruction: `stmia r1!,{r0,r2,r3,r4,r12,lr}@store windowed x[24].. x[29]'
+imdct_l_arm.S:983: Error: no such instruction: `ldr r7,=0x00'
+imdct_l_arm.S:984: Error: no such instruction: `ldr r8,=0x00'
+imdct_l_arm.S:985: Error: no such instruction: `ldr r9,=0x00'
+imdct_l_arm.S:986: Error: no such instruction: `ldr r10,=0x00'
+imdct_l_arm.S:988: Error: no such instruction: `stmia r1!,{r5 - r10}@store windowed x[30].. x[35]'
+imdct_l_arm.S:990: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:991: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:992: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:994: Error: too many memory references for `add'
+imdct_l_arm.S:995: Error: no such instruction: `ldmia sp!,{r4 - r11,pc}@restore callee saved regs,and return'
+imdct_l_arm.S:997: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:998: Error: junk at end of line, first unrecognized character is `@'
+imdct_l_arm.S:999: Error: junk at end of line, first unrecognized character is `@'
+make[2]: *** [imdct_l_arm.lo] Error 1
+make[1]: *** [all-recursive] Error 1
+make: *** [all-recursive-am] Error 2

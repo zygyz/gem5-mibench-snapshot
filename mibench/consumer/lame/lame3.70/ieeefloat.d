@@ -1,0 +1,34 @@
+ieeefloat.o ieeefloat.d: ieeefloat.c \
+ /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/limits.h \
+ /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include-fixed/syslimits.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/limits.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix1_lim.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/local_lim.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/limits.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix2_lim.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+ /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stddef.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+ /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include/stdarg.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/math.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/huge_val.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/huge_valf.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/huge_vall.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/inf.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/nan.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/mathdef.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/mathcalls.h \
+ /opt/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/mathinline.h \
+ ieeefloat.h

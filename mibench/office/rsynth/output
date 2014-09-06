@@ -1,0 +1,44 @@
+loading cache ./config.cache
+checking host system type... arm-unknown-linux
+checking for gcc... (cached) /bin/gcc
+checking for gcc... (cached) /bin/gcc
+checking whether we are using GNU C... (cached) yes
+checking whether /bin/gcc accepts -g... (cached) yes
+checking for POSIXized ISC... no
+checking whether make sets $MAKE... (cached) yes
+checking for a BSD compatible install... (cached) /bin/install -c
+checking how to run the C preprocessor... (cached) /bin/gcc -E
+checking whether cross-compiling... (cached) no
+checking for ANSI C header files... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for sys/ioctl.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for working const... (cached) yes
+checking for off_t... (cached) yes
+checking if we can use float in prototypes... yes
+checking for -lgdbm... (cached) yes
+checking for -lM... (cached) no
+checking for -lm... (cached) no
+checking for X... (cached) libraries , headers 
+checking for -lICE... (cached) no
+checking for -ldnet... (cached) no
+checking for -ldnet_stub... (cached) no
+checking for -lnsl... (cached) no
+checking for -lsocket... (cached) no
+checking for -lsocket... (cached) no
+checking for -lnsl... (cached) no
+checking for -lX11... (cached) no
+checking for audio/audiolib.h... (cached) no
+checking whether /bin/gcc needs -traditional... (cached) no
+checking return type of signal handlers... (cached) void
+checking for GNU make... yes
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating config.h
+config.h is unchanged
+linking ./config/linuxplay.c to hplay.c
